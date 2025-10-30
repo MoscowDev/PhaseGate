@@ -1,5 +1,6 @@
 
 from quiz_game_app_function import *
+count = 0
 
 while True:
 	menu = """
@@ -13,32 +14,35 @@ while True:
 	7. Exit
 """
 
-
 	print(menu)
     
 	user = input("\n Enter the correct Answers (1-5): ")
 
+
 	match user:
+
 		case "1":
-			
-			get_question_one()
-            
+			score = get_question_one()
+			count += score
 
 		case "2": 
-			get_question_two()
-            
+			score = get_question_two()
+			count += score
+
 
 		case "3":
-			get_question_three()
-            
+			score = get_question_three()
+			count += score
 
 
 		case "4":
-			get_question_four()
+			score = get_question_four()
+			count += score
 
 
 		case "5":
-			get_question_five()
+			score = get_question_five(count)
+			count += score
 
 
 		case "7":
@@ -47,7 +51,7 @@ while True:
 			break
 
 		case "6":
-			get_count()
+			print(f" You only scored: {count}")
 
 		case _:
 			print(" Invalid choice! Please enter 1, 2, 3,4,5 or 6.")
