@@ -10,5 +10,5 @@ function isPerfectSquare(num) {
     return false;
 }
 
-console.log(isPerfectSquare(16))
-console.log(isPerfectSquare(3))
+console.log(isPerfectSquare(9))
+console.log(isPerfectSquare(100))

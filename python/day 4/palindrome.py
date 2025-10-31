@@ -1,5 +1,5 @@
 def get_palindrome(my_list):
-	storage = my_list
+	
 	count = 0
 	for content in my_list:
 		palindrome = ""
@@ -7,11 +7,11 @@ def get_palindrome(my_list):
 			palindrome = element + palindrome
 
 		if content  == palindrome:
-			storage[count] = True;
+			 my_list[count] = True;
 		else:
-			storage[count] = False;
+			 my_list[count] = False;
 		count+=1
-	return storage
+	return my_list
 	
 my_list  = ["madam", "kali", "hello", "noon"]
 print(get_palindrome(my_list))
