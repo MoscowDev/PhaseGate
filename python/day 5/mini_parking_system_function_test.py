@@ -10,8 +10,8 @@ class mini_parking_system_function_test(unittest.TestCase):
 		actual =  add_car("volvo")
 
 		self.assertEqual(actual,expected)
-"""
 
+"""
 class mini_parking_system_function_test(unittest.TestCase):
 	def test_that_multiple_cars_can_be_added(self):
 		add_car("g-wagon")

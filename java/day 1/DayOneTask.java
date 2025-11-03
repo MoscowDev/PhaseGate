@@ -51,7 +51,7 @@ public class DayOneTask{
 		long stopTime = System.currentTimeMillis();
 	 
 	 System.out.printf("The total number of your score is %d%s%d%n ", rightAnswer, "/", questions);	
-	 long sumTime = countTime - stopTime ;
+	 long sumTime = stopTime -  countTime  ;
 	 System.out.print("The time spent in seconds " + sumTime + "seconds");
 	 
 
