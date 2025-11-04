@@ -45,19 +45,4 @@ def get_totals(cart):
 def display_invoice(cart, total, discount, vat, grand_total):
    
     print("\n========== MOSCOW STORE INVOICE ==========")
-    print("{:<20} {:>10} {:>10} {:>12}".format("Product", "Price", "Qty", "Subtotal"))
-    print("-" * 55)
-
-    for item in cart:
-        subtotal = item["price"] * item["quantity"]
-        print("{:<20} {:>10.2f} {:>10} {:>12.2f}".format(
-            item["name"], item["price"], item["quantity"], subtotal
-        ))
-
-    print("-" * 55)
-    print(f"{'Total:':<42} N{total:,.2f}")
-    print(f"{'Discount:':<42} N{discount:,.2f}")
-    print(f"{'VAT (7.5%):':<42} N{vat:,.2f}")
-    print(f"{'Grand Total:':<42} N{grand_total:,.2f}")
-    print("=============================================")
-    print("Thank you for shopping with Moscow Store!")
+    
